@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-title">Школа программирования «Hello World»</h1>
+        <hr>
+        <p class="main-text">
+            Здравствуйте! Мы очень рады, что <i>Вы</i> решили присоединиться к нам!<br>
+            Пожалуйста, заполните форму регистрации ниже
+        </p>
+        <form action="mailto:kbora630@gmail.com" enctype="text/plain" class="form">
+            <div class="form__action">
+                <a class="sign-in" href="#">Войти</a>
+                <a class="sign-up active" href="#">Регистрация</a>
+            </div>
+            <p class="form-text">
+                Придумай логин
+            </p>
+            <input type="text" name="username" class="form-input" placeholder="Придумай логин">
+            <p class="form-text">
+                Придумай пароль
+            </p>
+            <input type="password" name="userpass" class="form-input" placeholder="Придумай пароль">
+            <p class="form-text">
+
+                Выбери пол
+
+            </p>
+
+            <!-- <div class="form-wrapper"> -->
+            <input class="form-input-btn" type="radio" name="pol"> Мужской
+
+            <input class="form-input-btn" type="radio" name="pol"> Женский
+
+            <!-- </div> -->
+            <p class="form-text">Выбери желаемые курсы</p>
+
+            <div class="form-wrapper">
+                <input checked class="form-input-btn" type="checkbox">Frontend
+
+                <input class="form-input-btn" type="checkbox">Roblox
+
+                <input class="form-input-btn" type="checkbox">Figma
+
+                <input class="form-input-btn" type="checkbox">Scratch
+
+                <input class="form-input-btn" type="checkbox">Python
+
+                <input class="form-input-btn" type="checkbox">Unity
+            </div>
+            <p class="form-text">Расскажи немного о себе, о своих достижениях и мечтах</p>
+            <textarea placeholder="Расскажи о себе!" class="form-textarea"></textarea>
+            <button class="form-button" type="submit">Зарегистрироваться</button>
+            <hr class="form-horizontal">
+        </form>
+    </div>
+</body>
+
+</html>
